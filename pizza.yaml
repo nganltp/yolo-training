@@ -1,0 +1,11 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /root/disk4tb/tiny_data  # dataset root dir
+train: txt/train_pizza.txt  # train images (relative to 'path') 118287 images
+val: txt/valid_pizza.txt  # val images (relative to 'path') 5000 images
+test: txt/test_pizza.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+names:
+  0: fold-box
+  1: unfold-box
+  2: unfold-with-pizza
